@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tour-of-heroes"
+    }
+  },
+  "defaultProject": "tour-of-heroes",
+  "cli": {
+    "analytics": "0c038d5b-72b4-428a-9e9e-c20dfcb27575"
+  }
 }
