@@ -1,5 +1,11 @@
 <h2>My Heroes</h2>
 
+<div>
+  <label>Hero Name: <input #heroName /></label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(heroName.value); heroName.value=''">Add</button>
+</div>
+
 <ul class="heroes">
   <!-- [class.selected]="hero === selectedHero"
   (click)="onSelect(hero)" -->
@@ -12,9 +18,3 @@
       (click)="delete(hero)">X</button>
   </li>
 </ul>
-
-<div>
-  <label>Hero Name: <input #heroName /></label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''">Add</button>
-</div>
