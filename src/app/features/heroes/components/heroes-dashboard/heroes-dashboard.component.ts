@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Hero } from '../hero';
-import { HeroService } from '../hero.service';
+import { Hero } from '../../interfaces/hero';
+import { HeroService } from '../../services/hero.service';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-heroes-dashboard',
+  templateUrl: './heroes-dashboard.component.html',
+  styleUrls: ['./heroes-dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class HeroesDashboardComponent implements OnInit {
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService) {}
