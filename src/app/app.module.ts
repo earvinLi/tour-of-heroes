@@ -9,10 +9,7 @@ import { InMemoryDataService } from './core/services/in-memory-data.service';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HeroesDashboardComponent } from './features/heroes/components/heroes-dashboard/heroes-dashboard.component';
-import { HeroSearchComponent } from './features/heroes/components/hero-search/hero-search.component';
-import { HeroesListComponent } from './features/heroes/components/heroes-list/heroes-list.component';
-import { HeroDetailComponent } from './features/heroes/components/hero-detail/hero-detail.component';
+import { HeroesModule } from './features/heroes/heroes.module';
 import { MessagesComponent } from './features/messages/messages.component';
 
 @NgModule({
@@ -26,13 +23,10 @@ import { MessagesComponent } from './features/messages/messages.component';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     ),
+    HeroesModule,
   ],
   declarations: [
     AppComponent,
-    HeroesDashboardComponent,
-    HeroSearchComponent,
-    HeroesListComponent,
-    HeroDetailComponent,
     MessagesComponent,
   ],
   providers: [
